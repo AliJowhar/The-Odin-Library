@@ -2,13 +2,13 @@
   background-color: rgb(235, 231, 231);
 }
 
-header,
-#container {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 header {
+  width: 100%;
   align-items: center;
   background-color: white;
 }
@@ -17,8 +17,64 @@ h1 {
   margin-left: 20px;
   background-color: white;
 }
+h1:hover {
+  color: olivedrab;
+}
 
 #login {
-  width: 100px;
-  height: 50px;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #afafaf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#login:hover {
+  background-color: #525252;
+}
+
+#login:active {
+  background-color: #6823f3;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#addBtn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #afafaf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#addBtn:hover {
+  background-color: #525252;
+}
+
+#addBtn:active {
+  background-color: #6823f3;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: start; /* Vertically centers the content */
+  width: 100%;
+  height: 100vh;
 }
